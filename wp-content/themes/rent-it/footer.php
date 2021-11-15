@@ -12,8 +12,6 @@
 
 ?>
 
-</main>
-
 <footer class="container-xl">
     <section class="row">
         <?php

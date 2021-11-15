@@ -22,3 +22,25 @@ Stack trace:
 #19 {main}
   thrown in C:\xampp\htdocs\rentit\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
 
+2021-11-15T12:24:27+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "rentit_add_sidebar_tags" not found or invalid function name in C:\xampp\htdocs\rentit\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\rentit\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\rentit\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\rentit\wp-content\plugins\woocommerce\templates\archive-product.php(29): do_action('woocommerce_bef...')
+#3 C:\xampp\htdocs\rentit\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\rentit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\rentit\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\rentit\wp-includes\class-wp-hook.php on line 303
+
+2021-11-15T12:24:35+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "rentit_add_sidebar_tags" not found or invalid function name in C:\xampp\htdocs\rentit\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 C:\xampp\htdocs\rentit\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\rentit\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\rentit\wp-content\plugins\woocommerce\templates\archive-product.php(29): do_action('woocommerce_bef...')
+#3 C:\xampp\htdocs\rentit\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\rentit\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\rentit\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\rentit\wp-includes\class-wp-hook.php on line 303
+
