@@ -5,7 +5,6 @@ function rentit_scripts_styles()
 {
     // BOOTSTRAP SCRIPTS
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '5.0.2');
-	wp_enqueue_style('bootstrap-icons', get_template_directory_uri() . '/assets/css/bootstrap-icons.css', array(), '5.0.2');
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array(), '5.0.2', true);
     // GOOGLE FONTS
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap', array(), '1.0.0', 'all');
@@ -45,6 +44,4 @@ function rentit_config()
 
 add_action('after_setup_theme', 'rentit_config', 0);
 
-require get_template_directory() . '/inc/wc-modifications.php ';
-
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+require get_template_directory_uri() . 'inc/wcmod';
